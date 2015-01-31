@@ -214,6 +214,7 @@ controllers.controller('ContactController', ['$scope', '$http', '$modal', '$loca
       $scope.contactForm.timestamp = d.toJSON();
 
 	  console.log($scope.contactForm);
+    }
 // }}}
 }]); 
 
