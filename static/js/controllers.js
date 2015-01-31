@@ -224,7 +224,7 @@ controllers.controller('ContactController', ['$scope', '$http', '$modal', '$loca
 
       server.send({
         text:    $scope.contactForm.content, 
-        from:    $scope.contactForm.name + " <{}>".format($scope.contactForm.email), 
+        from:    "you <webofzuo@gmail.com>", 
         to:      "you <webofzuo@gmail.com>",
         subject: $scope.contactForm.subject
       }, function(err, message) { console.log(err || message); });
