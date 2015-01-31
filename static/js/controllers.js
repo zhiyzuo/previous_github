@@ -26,7 +26,7 @@ controllers.controller('NavController', ['$scope','$location', 'QueryService', f
 
 controllers.controller('NotesController', ['$scope','$location', 'QueryService', function($scope, $location, QueryService) {
 // {{{ Notes controller
-
+//TODO
 // }}}
 }]); 
 
@@ -213,51 +213,7 @@ controllers.controller('ContactController', ['$scope', '$http', '$modal', '$loca
       d.setTime(d.getTime() - d.getTimezoneOffset()*60*1000);
       $scope.contactForm.timestamp = d.toJSON();
 
-	  $http.post('/contact', $scope.contactForm)
-		.success(function(data) {
-
-          $scope.modalWindow.title = $scope.content.modal.title;
-          $scope.modalWindow.content = $scope.content.modal.content;
-          $scope.modalWindow.button_content = $scope.content.modal.button;
-          $scope.modalWindow.color = {"color":"LightSeaGreen"};
-          $scope.modalWindow.button = "btn-primary";
-
-          var modalInstance = $modal.open({
-            templateUrl: '../static/partials/sendModal.html',
-            controller: 'SendModalController',
-            resolve: {
-              modalWindow: function () {
-                return $scope.modalWindow;
-              },
-              sendStatus: function() {
-                return true;    
-              }
-            }
-         });
-       })
-		.error(function(data) {
-
-          $scope.modalWindow.title = $scope.content.error.title;
-          $scope.modalWindow.content = $scope.content.error.content;
-          $scope.modalWindow.button_content = $scope.content.error.button;
-          $scope.modalWindow.color = {"color":"OrangeRed"};
-          $scope.modalWindow.button = "btn-warning";
-
-          var modalInstance = $modal.open({
-            templateUrl: '../static/partials/sendModal.html',
-            controller: 'SendModalController',
-            resolve: {
-              modalWindow: function () {
-                return $scope.modalWindow;
-              },
-              sendStatus: function() {
-                return false;    
-              }
-            }
-          });
-
-        })
-    };
+	  console.log($scope.contactForm);
 // }}}
 }]); 
 
