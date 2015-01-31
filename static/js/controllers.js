@@ -203,10 +203,17 @@ controllers.controller('ContactController', ['$scope', '$http', '$modal', '$loca
     }
 /* * * * * * * * * */
 
-
     $scope.modalWindow = {};
 
     $scope.send = function() {
+
+      var email = require("../node_modules/emailjs/email");
+      var server = email.server.connect({
+        user:    "webofzuo@gmail.com", 
+        password:"webofzuo19491001", 
+        host:    "smtp.gmail.com", 
+        ssl:     true
+      });
 
       var d = new Date();
       // set timezone
@@ -214,6 +221,13 @@ controllers.controller('ContactController', ['$scope', '$http', '$modal', '$loca
       $scope.contactForm.timestamp = d.toJSON();
 
 	  console.log($scope.contactForm);
+
+      server.send({
+        text:    $scope.contactForm.content, 
+        from:    $scope.contactForm.name + " <{}>".format($scope.contactForm.email), 
+        to:      "you <webofzuo@gmail.com>",
+        subject: $scope.contactForm.subject
+      }, function(err, message) { console.log(err || message); });
     }
 // }}}
 }]); 
