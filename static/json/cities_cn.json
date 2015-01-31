@@ -1,0 +1,58 @@
+[
+    {
+        "name": "爱荷华城",
+        "bio": "这是我第一次来美国，感受到了中西部大农村的寒意...第一次见到这么大的雪。不过感觉暖气的发明太伟大，以至于零下十几度还没有上海冷...而且空气质量一百分！还能竟然见到鹿和松鼠，算是完全不一样的生活体验了。地图中的标记便是我的学校。",
+        "img": "static/img/iowacity.jpg",
+        "start": 2014,
+        "abbr": "ic",
+        "collpased": false,
+        "marker": {
+            "latitude": 41.661335,    
+            "longitude": -91.536096,
+            "name": "爱荷华大学"
+        },
+        "latLong": {
+            "latitude": 41.661128,    
+            "longitude": -91.530168,
+            "zoom": 14
+        } 
+    }, 
+
+    {
+        "name": "上海",
+        "bio": "大学四年就z在这里度过，来美国读书的梦想也是在这里实现。唯一让我不想在上海居住的就是...实在是太冷了（突然想起来也很热，大三那个暑假是40度）...想起都一阵寒意…晚上都盖两床被子...哭瞎。地图中的标记便是我的学校。",
+        "img": "static/img/shanghai.jpg",
+        "start" : 2010,
+        "abbr": "sh",
+        "collpased": false,
+        "marker": {
+            "latitude": 31.283136,    
+            "longitude": 121.500834,
+            "name": "同济大学"
+        },
+        "latLong": {
+            "latitude": 31.230416,    
+            "longitude": 121.473701,
+            "zoom": 10
+        }
+    },
+
+    {
+        "name": "广州",
+        "bio": "小学到高中的12年。气候宜(re)人(si)。主要是东西好吃啊乡亲们！离香港澳门还近，买东西说走就走啊！想想今年夏天就可以回去了还是有点小激动的...地图中的标记便是我的学校。",
+        "img": "static/img/guangzhou.jpg",
+        "start" : 1998,
+        "abbr": "gz",
+        "collpased": false,
+        "marker": {
+            "latitude": 23.177109,    
+            "longitude": 113.471831,
+            "name": "广州市第二中学"
+        },
+        "latLong": {
+            "latitude": 23.129110,    
+            "longitude": 113.264385, 
+            "zoom": 10
+        }
+    }
+]

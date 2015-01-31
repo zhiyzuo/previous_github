@@ -1,0 +1,13 @@
+[
+    {
+        "name": "简体中文",
+        "icon": "static/icons/China.ico",
+        "click": "cn"
+    },
+    {
+        "name": "English",
+        "icon": "static/icons/US.ico",
+        "click": ""
+    }
+]
+

@@ -1,0 +1,38 @@
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+    <hr>
+    <h1 style="color: MediumSeaGreen; font-family: 'Chewy', cursive;">{{jumbotron.heading}}</h1>
+    <p style="font-family:'Roboto', sans-serif; font-size:200%; color: MediumSeaGreen">{{jumbotron.words_part1}}
+        <a href="http://www.biz.uiowa.edu/faculty/kanzhao/" target="_blank">{{jumbotron.advisor}}</a>{{jumbotron.words_part2}}</p>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" ng-repeat="city in cities | orderBy:-cityAge">
+            <h2 align="center" id={{city.abbr}} style="font-family: 'Rock Salt'; cursive">{{city.name}}</h2>
+            <div align="center" tooltip="Click me for more!" tooltip-placement="bottom" >
+                <img class="circle" ng-src="{{city.img}}" ng-click="selectCity(city.name)" ng-model="city.name" />
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div ng-repeat="city in cities">
+           <div  class="animate-if" ng-if="city.collapsed">
+              <div class="container">
+
+                <p style="font-family:'Roboto', sans-serif; font-size:150%" id={{city.abbr}}>{{city.bio}}</p>
+
+                <ui-gmap-google-map center='map.center' zoom='map.zoom' options="options">
+
+                    <ui-gmap-marker coords="marker.coords" options="marker.options" idkey="marker.id" icon="marker.icon"> </ui-gmap-marker>
+
+                </ui-gmap-google-map> 
+
+              </div>
+            </div>
+        </div>
+    </div>
+</div>

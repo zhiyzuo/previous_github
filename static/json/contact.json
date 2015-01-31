@@ -1,0 +1,18 @@
+{
+    "h2":"Please feel free to contact me about your any thoughts",
+    "name":"Please enter your name here",
+    "email":"Please enter your email here",
+    "subject":"Please enter your subject here",
+    "content":"Please enter your content here",
+    "send": "Send",
+    "modal": {
+                "content": "Thank you for your message! You will receive a confirmation email.",    
+                "title": "Successful!",
+                "button": "OK"
+            },
+    "error": {
+                "content": "Please check your input.",    
+                "title": "Error!",
+                "button": "OK"
+            }
+}

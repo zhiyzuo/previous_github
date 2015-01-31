@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/zhiyazuo",
+        "fa": "fa fa-facebook fa-2x"
+    },
+
+
+    {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/zhiyazuo",
+        "fa": "fa fa-linkedin fa-2x"
+    },
+
+    {
+        "name": "GitHub",
+        "url": "https://github.com/zhiyzuo",
+        "fa": "fa fa-github fa-2x"
+    },
+
+    {
+        "name": "Twitter",
+        "url": "https://twitter.com/YeeAh27",
+        "fa": "fa fa-twitter fa-2x"
+    },
+
+    {
+        "name": "Weibo",
+        "url": "http://weibo.com/naroays",
+        "fa": "fa fa-weibo fa-2x"
+    },
+
+    {
+        "name": "Gmail",
+        "url": "mailto:zhiyazuo@gmail.com",
+        "fa": "fa fa-envelope fa-2x"
+    }
+]
+

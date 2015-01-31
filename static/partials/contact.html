@@ -1,0 +1,46 @@
+<div class="container contactForm">
+    <div class="row">
+        <div class="col-md-12" align=center>
+            <h2 style="color: GoldenRod">{{content.h2}}</h2>
+        </div>
+    </div>
+
+    <hr>  
+
+    <form class="form-horizontal" style="margin-top: 60px">
+      <div class="form-group">
+        <label for="inputName" class="col-sm-2 control-label"><i class="fa fa-user fa-2x contact_fa"></i></label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="inputName" placeholder={{content.name}} ng-model="contactForm.name">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="inputEmail" class="col-sm-2 control-label"><i class="fa fa-envelope-o fa-2x contact_fa"></i></label>
+        <div class="col-sm-9">
+          <input type="email" class="form-control" id="inputEmail" typeahead="email for email in emails | filter:$viewValue:emailTypeAhead" placeholder={{content.email}} ng-model="contactForm.email" typeahead-on-select="onSelect()">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="inputSubject" class="col-sm-2 control-label"><i class="fa fa-pencil fa-2x contact_fa"></i></label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="inputSubject" placeholder={{content.subject}} ng-model="contactForm.subject" enable="status.isFirstDisabled">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="inputContent" class="col-sm-2 control-label"><i class="fa fa-pencil-square-o fa-2x contact_fa"></i></label>
+        <div class="col-sm-9">
+          <textarea type="text" class="form-control" rows="4" id="inputContent" placeholder={{content.content}} ng-model="contactForm.content"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group" style="margin-top: 30px">
+        <div class="col-sm-offset-5 col-sm-7">
+          <button type="submit" class="btn btn-success btn-lg" ng-click="send()" style="font-family: 'Bad Script', cursive;">{{content.send}}</button>
+        </div>
+      </div>
+    </form>
+</div>
+

@@ -1,0 +1,11 @@
+[
+    {
+        "title": "About me",    
+        "content": "I am now pursuing a PhD in Informatics: Information Science at the University of Iowa, Iowa City, Iowa. My advisor is Dr. Kang Zhao. I gradauted from Tongji University with a Bachelor's degree in Automation, under the supervision of Dr. Guo-Zheng Li.\r I have to say that Iowa City is, albeit small, very beautiful. My new year's wish is to learn driving so that I can go to the grocery's any time I want and of course, Chicago - the biggest city closest to Iowa City.\nBack in China, I live in Guangzhou, a wonderful city. Often, people I met in the U.S. assumes that the big cities are Shanghai, Hongkong and Beijing. Actually this is the misunderstading. There are a lot of big cities right now -it may not be very good, though...\n This is the first time I've been in the U.S. and I am really excited. This first semester seems well so far. However, the weird thing here for me is that I can no longer celebrate Chinese New Year for the next five years or more. In the summer of 2015, I can go back home to visit my parents finally, thanks to my kind and generous advisor who grants me doing this!"
+    },
+
+    {
+        "title": "About the website",    
+        "content": "This website is built all by myself, using Bootstrap, AngularJS and Flask. There are, of course, a lot of deficiencies. I will appreciate any advice from you. Also, I'd be very happy to talk to you about web design :) BTW, you can find the codes of this website on my Github."
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Iowa City",
+        "bio": "This is the first time I've been to the States. Everything's new to me. This is a quite, nice town. Love it! I witnessed the biggest snow in my life here. And I often see deer and squirrels around in the backyard! As you can see, the pin in the map is my school.",
+        "img": "static/img/iowacity.jpg",
+        "start": 2014,
+        "abbr": "ic",
+        "collpased": false,
+        "marker": {
+            "latitude": 41.661335,    
+            "longitude": -91.536096,
+            "name": "University of Iowa"
+        },
+        "latLong": {
+            "latitude": 41.661128,    
+            "longitude": -91.530168,
+            "zoom": 14
+        } 
+    }, 
+
+    {
+        "name": "Shanghai",
+        "bio": "I studied Automation in Tongji University in Shanghai from 2010 to 2014, a big city which is similar to Guangzhou. It's quite cold and there's no heating devices. Air conditioners are not helping that much...From here, I spent the four years far away from home and achieved my dream of studying in the U,S. As you can see, the pin in the map is my school.",
+        "img": "static/img/shanghai.jpg",
+        "start" : 2010,
+        "abbr": "sh",
+        "collpased": false,
+        "marker": {
+            "latitude": 31.283136,    
+            "longitude": 121.500834,
+            "name": "Tongji University"
+        },
+        "latLong": {
+            "latitude": 31.230416,    
+            "longitude": 121.473701,
+            "zoom": 10
+        }
+    },
+
+    {
+        "name": "Guangzhou",
+        "bio": "This is the city where I grew up. Nice people, nice food and nice weather (A bit wet, I've got to say). You should defintely come here if you wanna travel in China. Guangzhou will rock your knowledge of China (A lot of other cities too XD)! As you can see, the pin in the map is my school.",
+        "img": "static/img/guangzhou.jpg",
+        "start" : 1998,
+        "abbr": "gz",
+        "collpased": false,
+        "marker": {
+            "latitude": 23.177109,    
+            "longitude": 113.471831,
+            "name": "Guangzhou No.2 High School"
+        },
+        "latLong": {
+            "latitude": 23.129110,    
+            "longitude": 113.264385, 
+            "zoom": 10
+        }
+    }
+]

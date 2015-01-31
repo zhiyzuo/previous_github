@@ -1,0 +1,126 @@
+.myIcons {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+#socialIcons {
+    color: #ccc;
+    font-size: 2em;
+}
+
+.circle {
+    -webkit-border-radius: 50em;
+    -moz-border-radius: 50em;
+    border-radius: 50em;
+    width: 300px;
+    height: 170px;
+}
+
+.tooltip-inner {
+    text-align: center;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 10px;
+    background-color: #505050;
+    font-size: 18px;
+}
+
+a:link {
+     color: MediumSeaGreen;
+}
+
+a:visited {
+     text-decoration: none;   
+     color: MediumSeaGreen;
+}
+
+a:hover {
+     color: DarkSeaGreen;
+}
+
+.jumbotron {
+    height: 350px;    
+}
+
+.mainBackground {
+    background: url("../img/bg1.png") center center
+}
+
+footer {
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+#ic {
+    color: GoldenRod;
+}
+
+#gz {
+    color: MediumSeaGreen;
+}
+
+#sh {
+    color: Thistle;
+}
+
+.angular-google-map-container { 
+    height: 300px; 
+    border-radius: 25px;
+}
+
+.googleMapsMarker {
+    font-size: 20px;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    color: DarkCyan;
+    white-space: nowrap;
+    text-align: center;
+    border: 2px solid;
+    background-color: LightBlue;
+    width: 400px;
+}
+
+.contactForm {
+    margin-top: 60px;   
+    margin-bottom: 30px;
+    width: 60%;
+}
+
+.contact_fa {
+    position: relative;
+    color: #ccc;
+    top: -3px;
+}
+
+.about {
+    margin-top: 40px;   
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+.aboutDiv {
+    border-radius: 20px;
+    background: url("../img/bg.png");
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+    color: MistyRose;
+    padding: 10px;
+}
+
+.modalTitle {
+    font-family: 'Rock Salt', cursive;
+}
+
+.modalContent {
+    font-family: 'Chewy', cursive;
+    font-size: 20px;
+}
+
+.writings {
+    margin-top: 60px;   
+    margin-bottom: 30px;
+    width: 70%;
+}
+
+.jumbotron{padding:30px 15px;margin-bottom:30px;color:inherit;background-image:url("../img/jumbotronbackground.png")}.jumbotron h1,.jumbotron .h1{color:inherit}.jumbotron p{margin-bottom:15px;font-size:21px;font-weight:200}.jumbotron>hr{border-top-color:#d5d5d5}.container .jumbotron,.container-fluid .jumbotron{border-radius:6px}.jumbotron .container{max-width:100%}@media screen and (min-width:768px){.jumbotron{padding:48px 0}.container .jumbotron,.container-fluid .jumbotron{padding-right:60px;padding-left:60px}.jumbotron h1,.jumbotron .h1{font-size:63px}}
