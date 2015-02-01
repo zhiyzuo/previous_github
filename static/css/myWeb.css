@@ -5,7 +5,7 @@
 }
 
 #socialIcons {
-    color: #ccc;
+    color: GoldenRod;
     font-size: 2em;
 }
 
@@ -27,16 +27,16 @@
 }
 
 a:link {
-     color: MediumSeaGreen;
+     color: GoldenRod;
 }
 
 a:visited {
      text-decoration: none;   
-     color: MediumSeaGreen;
+     color: GoldenRod;
 }
 
 a:hover {
-     color: DarkSeaGreen;
+     color: Gold;
 }
 
 .jumbotron {
@@ -89,7 +89,7 @@ footer {
 
 .contact_fa {
     position: relative;
-    color: #ccc;
+    color: GoldenRod;
     top: -3px;
 }
 

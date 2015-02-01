@@ -7,6 +7,7 @@ controllers.controller('NavController', ['$scope','$location', 'QueryService', f
 
     if($location.path().indexOf('cn') > -1) {
         $scope.navTerms = QueryService.query_navbar_cn();
+        console.log("cn");
     } else {
         $scope.navTerms = QueryService.query_navbar();
     }
@@ -15,11 +16,9 @@ controllers.controller('NavController', ['$scope','$location', 'QueryService', f
         var currLoc = $location.path();
         var cnIndex = currLoc.indexOf('cn');
         if ( cnIndex > -1) {
-            currLoc = currLoc.substring(cnIndex+1, len(currLoc));
+            currLoc = currLoc.substring(cnIndex+1, currLoc.length);
         }
 
-        console.log("currLoc: " + currLoc + "; navLoc: " + navLoc);
-        console.log(currLoc===navLoc);
         return currLoc == navLoc;
     };
 
