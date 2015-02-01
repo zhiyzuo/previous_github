@@ -11,6 +11,18 @@ controllers.controller('NavController', ['$scope','$location', 'QueryService', f
         $scope.navTerms = QueryService.query_navbar();
     }
 
+    $scope.isActive = function(navLoc) {
+        var currLoc = $location.path();
+        var cnIndex = currLoc.indexOf('cn');
+        if ( cnIndex > -1) {
+            currLoc = currLoc.substring(cnIndex+1, len(currLoc));
+        }
+
+        console.log("currLoc: " + currLoc + "; navLoc: " + navLoc);
+        console.log(currLoc===navLoc);
+        return currLoc == navLoc;
+    };
+
     $scope.goTo = function(loc) {
         var currLoc = $location.path();
 
