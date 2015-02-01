@@ -24,14 +24,6 @@ app.config(['$routeProvider',
         templateUrl: 'static/partials/notes.html',
         controller: 'NotesController'
       }).
-      when('/contact', {
-        templateUrl: 'static/partials/contact.html',
-        controller: 'ContactController'
-      }).
-      when('/cn/contact', {
-        templateUrl: 'static/partials/contact.html',
-        controller: 'ContactController'
-      }).
       when('/about', {
         templateUrl: 'static/partials/about.html',
         controller: 'AboutController'

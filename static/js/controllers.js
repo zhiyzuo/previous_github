@@ -107,84 +107,9 @@ controllers.controller('MainController', ['$scope', 'QueryService', 'uiGmapGoogl
                 },
             };
         };
-}]); 
-
-controllers.controller('ContactController', ['$scope', '$http', '$modal', function($scope, $http, $modal) {
-    $scope.contactForm = {};
-    $scope.contactForm.email = "";
-
-    /* Email Typeahead */
-    $scope.emails = ['gmail.com', 'yahoo.com', 'hotmail.com', 'sina.com', 'sohu.com', '163.com', 'qq.com', 'uiowa.edu', 'tongji.edu.cn'];
-    
-    $scope.emailTypeAhead = function(email, viewValue) {
-        var atPos = viewValue.indexOf("@");
-        $scope.emailName = viewValue.substr(0, atPos);
-        var emailDomain = viewValue.substr(atPos+1, viewValue.length);
-        return (atPos > -1) & (email.substr(0, emailDomain.length).toLowerCase() == viewValue.substr(atPos+1, viewValue.length).toLowerCase())
-    }
-
-    $scope.onSelect = function() {
-        // complete the whole address
-        $scope.contactForm.email = $scope.emailName + "@" + $scope.contactForm.email;
-    }
-    /* * * * * * * * * */
-
-
-    $scope.modalWindow = {};
-
-    $scope.send = function() {
-
-      var d = new Date();
-      // set timezone
-      d.setTime(d.getTime() - d.getTimezoneOffset()*60*1000);
-      $scope.contactForm.timestamp = d.toJSON();
-
-	  $http.post('/contact', $scope.contactForm)
-		.success(function(data) {
-
-          $scope.modalWindow.title = "Successful!";
-          $scope.modalWindow.content = "Thank you for your message! You will receive a confirmation email.";
-          $scope.modalWindow.color = {"color":"LightSeaGreen"};
-          $scope.modalWindow.button = "btn-primary";
-
-          var modalInstance = $modal.open({
-            templateUrl: '../static/partials/sendModal.html',
-            controller: 'SendModalController',
-            resolve: {
-              modalWindow: function () {
-                return $scope.modalWindow;
-              },
-              sendStatus: function() {
-                return true;    
-              }
-            }
-         });
-       })
-		.error(function(data) {
-
-          $scope.modalWindow.title = "Error!";
-          $scope.modalWindow.content = "Please check your input.";
-          $scope.modalWindow.color = {"color":"OrangeRed"};
-          $scope.modalWindow.button = "btn-warning";
-
-          var modalInstance = $modal.open({
-            templateUrl: '../static/partials/sendModal.html',
-            controller: 'SendModalController',
-            resolve: {
-              modalWindow: function () {
-                return $scope.modalWindow;
-              },
-              sendStatus: function() {
-                return false;    
-              }
-            }
-          });
-
-        })
-    };
 // }}}
-
 }]); 
+
 
 controllers.controller('ContactController', ['$scope', '$http', '$modal', '$location', 'QueryService', function($scope, $http, $modal, $location, QueryService) {
 // {{{ Contact page controller
