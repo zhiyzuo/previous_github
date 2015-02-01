@@ -218,14 +218,6 @@ controllers.controller('ContactController', ['$scope', '$http', '$modal', '$loca
 
     $scope.send = function() {
 
-      var email = require("../node_modules/emailjs/email");
-      var server = email.server.connect({
-        user:    "webofzuo@gmail.com", 
-        password:"webofzuo19491001", 
-        host:    "smtp.gmail.com", 
-        ssl:     true
-      });
-
       var d = new Date();
       // set timezone
       d.setTime(d.getTime() - d.getTimezoneOffset()*60*1000);
@@ -233,12 +225,37 @@ controllers.controller('ContactController', ['$scope', '$http', '$modal', '$loca
 
 	  console.log($scope.contactForm);
 
-      server.send({
-        text:    $scope.contactForm.content, 
-        from:    "you <webofzuo@gmail.com>", 
-        to:      "you <webofzuo@gmail.com>",
-        subject: $scope.contactForm.subject
-      }, function(err, message) { console.log(err || message); });
+      var nodemailer = require('nodemailer');
+
+      // create reusable transporter object using SMTP transport
+      var transporter = nodemailer.createTransport({
+            service: 'Gmail',
+            auth: {
+                user: 'webofzuo@gmail.com',
+                pass: 'webofzuo19491001'
+            }
+        });
+
+        // NB! No need to recreate the transporter object. You can use
+        // the same transporter object for all e-mails
+
+        // setup e-mail data with unicode symbols
+      var mailOptions = {
+            from: 'webofzuo@gmail.com', // sender address
+            to: 'webofzuo@gmail.com', // list of receivers
+            subject: 'Hello ✔', // Subject line
+            text: 'Hello world ✔', // plaintext body
+            html: '<b>Hello world ✔</b>' // html body
+      };
+
+        // send mail with defined transport object
+      transporter.sendMail(mailOptions, function(error, info){
+            if(error){
+                console.log(error);
+            }else{
+                console.log('Message sent: ' + info.response);
+            }
+        });
     }
 // }}}
 }]); 

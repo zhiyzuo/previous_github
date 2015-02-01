@@ -6,6 +6,6 @@
 
     {
         "title": "关于这个网站",    
-        "content": "这个网站的前端是用AngularJS和Bootstrap，后端是用Flask搭建的。第一次靠自己建立整个网站，肯定有很多考虑不周到的地方，欢迎讨论~"
+        "content": "这个网站的前端是用AngularJS和Bootstrap。第一次靠自己建立整个网站，肯定有很多考虑不周到的地方，欢迎讨论~"
     }
 ]
